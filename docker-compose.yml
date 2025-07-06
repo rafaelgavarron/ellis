@@ -1,0 +1,9 @@
+services:
+  api:
+    container_name: api
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    # O comando no Dockerfile já inclui --reload, que é ideal para desenvolvimento.
